@@ -1,0 +1,126 @@
+.App-header {
+  color: #333333;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+  position: relative;
+  text-align: left;
+}
+@media(min-width: 1024px) {
+  .App-header {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+@media(min-width: 1280px) {
+  .App-header {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+}
+
+.App-header .App-title svg {
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.App-header .App-header-links {
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.App-header .App-header-links a {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.App-header .App-header-links a svg {
+  position: relative;
+  top: 4px;
+}
+
+.App-header .App-header-links .edit-btn {
+  background: #333333;
+  border: 0;
+  border-radius: 20px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  margin-left: 0.5rem;
+  outline: none;
+  padding: 0.5rem 1rem;
+  user-select: none;
+}
+@media(min-width: 768px) {
+  .App-header .App-header-links .edit-btn {
+    margin-left: 1rem;
+  }
+}
+
+.App.currently-editing-grid .App-header .App-header-links .edit-btn {
+  background: #22d049;
+}
+
+.App.currently-adding .App-header .App-header-links .edit-btn {
+  display: none;
+}
+
+.App.currently-adding .floating-actions,
+.App.currently-editing-grid .floating-actions,
+.App.currently-editing-item .floating-actions {
+  display: none;
+}
+
+.floating-add {
+  background: #333333;
+}
+
+.floating-save {
+  background: #22d049;
+  display: none;
+}
+
+.floating-add,
+.floating-save {
+  border-radius: 100%;
+  bottom: 1rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 75px;
+  position: fixed;
+  right: 1rem;
+  width: 75px;
+  z-index: 2;
+}
+
+@media(min-width: 1280px) {
+  .floating-add,
+  .floating-save {
+    bottom: 2rem;
+    right: 2rem;
+  }
+}
+
+.floating-add div,
+.floating-save div {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  user-select: none;
+}
+
+.floating-actions.selected .floating-add {
+  display: none;
+}
+
+.floating-actions.selected .floating-save {
+  display: block;
+}
+

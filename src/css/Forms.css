@@ -1,0 +1,145 @@
+.App-add-card {
+  border: 1px solid #dedede;
+  border-radius: 10px;
+  display: none;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+}
+@media(min-width: 768px) {
+  .App-add-card {
+    margin: 0 auto;
+    max-width: 360px;
+  }
+}
+
+.App-add-card .error-message {
+  background: #ff0033;
+  border-radius: 4px;
+  color: white;
+  display: none;
+  padding: 0.5rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.App-add-card.error > .error-message {
+  display: block;
+}
+
+.currently-adding .App-add-card {
+  display: block;
+}
+
+.App-add-card .form-row {
+  margin-bottom: 1rem;
+}
+
+.App-add-card form > div:last-child {
+  margin-bottom: 0;
+}
+
+.App-add-card .form-row button {
+  background: 1px solid #eeeeee;
+  border: 0;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  height: 35px;
+  margin-top: 1rem;
+  width: 49%;
+}
+
+.App-add-card .form-row button:nth-of-type(1) {
+  background: #22d049;
+  color: white;
+  font-weight: bolder;
+  margin-right: 1%;
+}
+
+.App-add-card .form-row button:nth-of-type(1):hover {
+  background: #1fc443;
+  border-color:#1fc443;
+}
+
+.App-add-card .form-row button:nth-of-type(2) {
+  margin-left: 1%;
+}
+
+.App-add-card .form-row button:nth-of-type(2):hover {
+  background: #dedede;
+  border-color:#dedede;
+}
+
+.App-add-card .form-row input {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  display: block;
+  font-size: 1em;
+  height: 35px;
+  padding: 5px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.App-add-card .form-row select {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  color: #777777;
+  display: block;
+  font-size: 1em;
+  height: 35px;
+  padding: 5px 2px;
+  margin-top: 5px;
+  user-select: none;
+  width: 100%;
+}
+
+.App-add-card .form-row label {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: bold;
+  max-width: 100%;
+  text-align: left;
+}
+
+.App-add-card table {
+  min-width: 100%;
+}
+
+.App-add-card table th {
+  border: 0;
+  padding: 0.5rem 1rem 1rem 1rem;
+}
+
+.App-add-card table th small {
+  display: block;
+  margin: 0.25rem;
+}
+
+.App-add-card table td {
+  border: 0;
+  padding: 0.25rem;
+  width: 25%;
+}
+
+.App-add-card table td button {
+  background: #eeeeee;
+  border: 0;
+  border-radius: 4px;
+  display: block;
+  padding: 20px 10px;
+  width: 100%;
+  user-select: none;
+}
+
+.App-add-card table td button:hover {
+  background: #dedede;
+}
+
+.App-add-card table th small {
+  display: block;
+  font-weight: normal;
+}
+
+table.goal-presets.error .error-message {
+  display: block;
+  margin: 0 0 1.25rem 0;
+}

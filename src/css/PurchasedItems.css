@@ -1,0 +1,249 @@
+.no-items {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+@media(min-width: 768px) {
+  .no-items {
+    width: 600px;
+  }
+}
+
+.no-items .overlayed {
+  color: white;
+  font-size: 0.8rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media(min-width: 768px) {
+  .no-items .overlayed {
+    font-size: 1rem;
+  }
+}
+
+.Purchases-container {
+  column-gap: 1rem;
+  display: grid;
+  grid-template-areas: "div div";
+  row-gap: 1rem;
+}
+@media(min-width: 768px) {
+  .Purchases-container {
+    grid-template-areas: "div div div";
+  }
+}
+@media(min-width: 1024px) {
+  .Purchases-container {
+    margin: 0 auto;
+    max-width: 768px;
+  }
+}
+@media(min-width: 1280px) {
+  .Purchases-container {
+    grid-template-areas: "div div div div";
+    max-width: 1024px;
+  }
+}
+
+.currently-adding .Purchases-container,
+.currently-editing-item .Purchases-container {
+  display: none;
+}
+
+.Purchases-container .Purchase-card {
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  height: 320px;
+  outline: none;
+  position: relative;
+  text-align: left;
+}
+
+.Purchases-container .Purchase-card .selected-overlay,
+.Purchases-container .Purchase-card .edit-overlay {
+  display: none;
+  z-index: 1;
+}
+
+.Purchases-container .Purchase-card.selected .selected-overlay,
+.App.currently-editing-grid .Purchases-container .Purchase-card .edit-overlay {
+  background: rgba(0,0,0,0.5);
+  border-radius: 25px;
+  display: block;
+  height: 320px;
+  position: relative;
+}
+
+.Purchases-container .Purchase-card.selected .selected-overlay div {
+  font-size: 2.5rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Purchases-container .Purchase-card .edit-overlay > div {
+  font-size: 2rem;
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Purchases-container .Purchase-card .edit-overlay div > div {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+
+/********************************************************/
+/* Card Text                                            */
+/********************************************************/
+.Purchases-container .Purchase-card .Card-text-container {
+  position: absolute;
+  bottom: 1rem;
+}
+
+.Purchases-container .Purchase-card .Card-text-container.count-container {
+  right: 0;
+  text-align: right;
+  top: 1rem;
+}
+
+.Purchases-container .Purchase-card .Card-text-container.count-container .Card-text {
+  border-radius: 50px;
+  padding: 0.2rem 0.75rem;
+  user-select: none;
+}
+
+.Purchases-container .Purchase-card .Card-text-container .Card-text {
+  clear: left;
+  float: left;
+  margin: 1px 1rem;
+  padding: 3px 5px;
+}
+
+.Purchases-container .Purchase-card .Card-text-container .Card-text.brand {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+}
+
+.Purchases-container .Purchase-card .Card-text-container .Card-text.product {
+  font-weight: bolder;
+}
+
+.Purchases-container .Purchase-card .Card-text-container .Card-text.price {
+  font-size: 0.75rem;
+}
+
+@media(min-width: 768px) {
+  .Purchases-container .Purchase-card .Card-text-container .Card-text.brand {
+    font-size: 0.75rem;
+  }
+
+  .Purchases-container .Purchase-card .Card-text-container .Card-text.product {
+    font-size: 1.25rem;
+  }
+
+  .Purchases-container .Purchase-card .Card-text-container .Card-text.price {
+    font-size: 0.9rem;
+  }
+}
+
+
+/********************************************************/
+/* Colors                                               */
+/********************************************************/
+
+.Purchases-container .Purchase-card.black,
+.Purchases-container .Purchase-card.other {
+  background: #bababa;
+}
+
+.Purchases-container .Purchase-card.blue {
+  background: #d5ecff;
+}
+
+.Purchases-container .Purchase-card.brown {
+  background: #7a6a63;
+}
+
+.Purchases-container .Purchase-card.gold,
+.Purchases-container .Purchase-card.yellow {
+  background: #f4eacb;
+}
+
+.Purchases-container .Purchase-card.green {
+  background: #a0b8a9;
+}
+
+.Purchases-container .Purchase-card.grey,
+.Purchases-container .Purchase-card.white {
+  background: #eeeeee;
+}
+
+.Purchases-container .Purchase-card.orange {
+  background: #fdcbab;
+}
+
+.Purchases-container .Purchase-card.pink {
+  background: #ffeef1;
+}
+
+.Purchases-container .Purchase-card.purple {
+  background: #eee2ff;
+}
+
+.Purchases-container .Purchase-card.red {
+  background: #a22525;
+}
+
+.Purchases-container .Purchase-card.black .Card-text,
+.Purchases-container .Purchase-card.other .Card-text {
+  background: #333333;
+}
+
+.Purchases-container .Purchase-card.blue .Card-text {
+  background: #277bc1;
+}
+
+.Purchases-container .Purchase-card.brown .Card-text {
+  background: #552814;
+}
+
+.Purchases-container .Purchase-card.gold .Card-text,
+.Purchases-container .Purchase-card.yellow .Card-text {
+  background: #e8b502;
+}
+
+.Purchases-container .Purchase-card.green .Card-text {
+  background: #1a4428;
+}
+
+.Purchases-container .Purchase-card.grey .Card-text,
+.Purchases-container .Purchase-card.white .Card-text {
+  background: #666666;
+}
+
+.Purchases-container .Purchase-card.orange .Card-text {
+  background: #f37021;
+}
+
+.Purchases-container .Purchase-card.pink .Card-text {
+  background: #ff94a9;
+}
+
+.Purchases-container .Purchase-card.purple .Card-text {
+  background: #945ce7;
+}
+
+.Purchases-container .Purchase-card.red .Card-text {
+  background: #ff0033;
+}

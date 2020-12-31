@@ -1,0 +1,102 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 13px;
+  scroll-snap-type: y mandatory;
+}
+@media(min-width: 900px){
+  html {
+    font-size: 14px;
+  }
+}
+@media(min-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+} */
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+a {
+  color: #f37021;
+  text-decoration: none;
+}
+
+button,
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+  outline: none;
+}
+
+hr {
+  border: 0.5px solid #eeeeee;
+  color: #eeeeee;
+  background-color: #eeeeee;
+  margin: 2.5rem 0.5rem 1rem 0.5rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img[src$=".svg"] {
+  max-width: none;
+  height: auto;
+  width: 100%;
+}
+
+table {
+  margin-bottom: 1.5rem;
+}
+
+tbody, tr, td {
+  border: 1px solid #dedede;
+}
+
+td {
+  padding: 1rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child {
+  margin-bottom: 0;
+}

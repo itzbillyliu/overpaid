@@ -1,4 +1,8 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Overpaid?
+
+Overpaid? is a React app intended as an ROI calculator for the splurge-worthy, guilty-pleasure, why-did-I-ever-buy-that luxury items in our lives.
+
+It is bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is written with [TypeScript](https://www.typescriptlang.org) and the goal is to move away from using React hooks to utilizing Redux to handle actions within the application. This project also uses [fontawesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
 
 ## Available Scripts
 
